@@ -1,3 +1,4 @@
+import localPost from '../data/local-database.json'
 
 export class LocalDataBaseService {
 
@@ -18,4 +19,10 @@ export class LocalDataBaseService {
     ]
   }
 
+}
+
+export class JsonDatabaseService {
+  async getPosts () {
+    return localPost;
+  }
 }
