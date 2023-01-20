@@ -12,15 +12,10 @@ export class PostService {
 
   private posts: Post[] = [];
 
-  constructor() {}
+  constructor( private postProvider: JsonDatabaseService) {}
 
   async getPosts() {
-    // const jsonDB = new LocalDataBaseService();
-    const jsonDB = new JsonDatabaseService()
-
-    // this.posts = await jsonDB.getFakePosts();
-    this.posts = await jsonDB.getPosts();
-
+    this.posts = await this.postProvider.getPosts();
     return this.posts;
   }
 }
