@@ -1,9 +1,9 @@
 /*
   ----- Principio de segregación de interfaz -----
-  Una clase no deben ser obligada a utilizar metodos de herencia
-  o implementación si esos métodos no los va a utilizar.
-  Que estos métodos estén dentro de una clase vuelven a la clase sensible a cambios
-  cambios en esos métodos, obligándola a modificarse cada que estos cambios sucedan.
+  Una clase no debe ser obligada a utilizar metodos de herencia o implementación si esos métodos 
+  no los va a utilizar.
+  Que estos métodos estén dentro de una clase vuelven a la clase sensible a cambios cambios en
+  esos métodos, obligándola a modificarse cada que estos cambios sucedan.
 */
 // interface Bird {
 //   eat(): void;
