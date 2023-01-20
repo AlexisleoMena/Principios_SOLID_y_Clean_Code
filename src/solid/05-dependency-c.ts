@@ -33,3 +33,10 @@ export class JsonDatabaseService implements PostProvider {
     return localPost;
   }
 }
+
+export class WebApiPostService implements PostProvider {
+  async getPosts(): Promise<Post[]> {
+    const res = await  fetch("https://jsonplaceholder.typicode.com/posts")
+    return await res.json();
+  }
+}
